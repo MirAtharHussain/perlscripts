@@ -15,23 +15,25 @@ use strict;#The strict pragma prevents you from using code that is potentially u
 package Calculator;
 
 
+
 sub Addition{
-	($num1, $num2) =@_;
-	say $num1+$num2, 'is addition of numbers';
+	my($num1, $num2) =@_;
+	say $num1+$num2, 'is addition of two numbers';
 }
 sub Subtract{
-	($num1, $num2) =@_;
-	say $num1-$num2, 'is subtraction of numbers';
+	my($num1, $num2) =@_;
+	say $num1-$num2, 'is subtraction of two numbers';
 }
 sub Multiply{
-	($num1, $num2) =@_;
-	say $num1*$num2, 'is multiplication of numbers';
+	my($num1, $num2) =@_;
+	say $num1*$num2, 'is multiplication of two numbers';
 }
 sub Modulus{
-	($num1, $num2) =@_;
-	say $num1%$num2, 'is modulus of numbers';
+	my($num1, $num2) =@_;
+	say $num1%$num2, 'is modulus of two numbers';
 }
 sub Division{
-	($num1, $num2) =@_;
-	say $num1/$num2, 'is division of numbers';
+	my($num1, $num2) =@_;
+	say $num1/$num2, 'is division of two numbers';
 }
+1;
