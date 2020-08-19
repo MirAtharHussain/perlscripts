@@ -7,10 +7,21 @@ Problem 3: Print fibonacci series using while and for loop. Print their sum too.
 =cut
 
 
+use v5.10;
+use warnings;
+use strict;
 
 
-my $n=20;
+print("Enter a number to find fibonacci");
+$a=<>;
 
+fibonacci($a);
+
+sub fibonacci{
+
+my $n=$_[0];
+
+my $next;
 
 my $f= 0;
 
@@ -30,14 +41,14 @@ $next=$i;
 
 else{
 
-$next = $f + $s;
-$f = $s;
+$next = $f + $s;#Adding the previous two numbers
+$f = $s;#swaping the number
 $s = $next;
-$sum = $sum+$next;
+$sum = $sum+$next;#adding the fibonacci number to get total
 }
 
-print("$next");
+print("$next", ".\n");
 
 }
 print("\tThe sum of fibonacci series is :$sum");
-
+}
