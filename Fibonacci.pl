@@ -11,11 +11,17 @@ use v5.10;
 use warnings;
 use strict;
 
-
+print("Enter how many times do ");
+my $k=<>;
 print("Enter a number to find fibonacci");
 $a=<>;
 
+
+while($k!=0)
+{
 fibonacci($a);
+$k--;
+}
 
 our $count=0;
 
