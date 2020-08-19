@@ -17,6 +17,8 @@ $a=<>;
 
 fibonacci($a);
 
+our $count=0;
+
 sub fibonacci{
 
 my $n=$_[0];
@@ -28,7 +30,7 @@ my $f= 0;
 
 my $s = 1; 
 
-my $sum=0;
+my $sum=$f+$s;
 
 
 for ( my $i = 0 ; $i < $n ; $i++ )
@@ -44,11 +46,15 @@ else{
 $next = $f + $s;#Adding the previous two numbers
 $f = $s;#swaping the number
 $s = $next;
-$sum = $sum+$next;#adding the fibonacci number to get total
+$sum = $sum + $next;#adding the fibonacci number to get total
 }
 
 print("$next", ".\n");
+$count++;
 
 }
-print("\tThe sum of fibonacci series is :$sum");
+
+print("The sum of fibonacci series is :$sum", "\n");#printing the sum of fibonacci
+
+print("The no of fibonacci numbers are: $count", "\n");#total no of fibonacci numbers 
 }
