@@ -13,13 +13,12 @@ use strict;
 
 print("Enter how many times do ");
 my $k=<>;
-print("Enter a number to find fibonacci");
-$a=<>;
+
 
 
 while($k!=0)
 {
-fibonacci($a);
+fibonacci();
 $k--;
 }
 
@@ -27,7 +26,9 @@ our $count=0;
 
 sub fibonacci{
 
-my $n=$_[0];
+print("Enter a number to find fibonacci");
+my $n=<>;
+
 
 my $next;
 
